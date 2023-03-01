@@ -56,6 +56,7 @@ alias gcm='git commit -m'
 alias gc='git checkout'
 alias gl='git pull origin'
 alias gp='git push origin'
+alias gcpr='gh pr checkout $(gh pr list | peco | cut -f 1)'
 
 # git checkout lb, serch peco
 alias -g lb='`git branch | peco --prompt "GIT BRANCH>" | head -n 1 | sed -e "s/^\*\s*//g"`'

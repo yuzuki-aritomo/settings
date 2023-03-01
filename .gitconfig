@@ -1,0 +1,13 @@
+[user]
+	name = YuzukiAritomo
+	email = yuzuki.aritomo@gmail.com
+
+[ghq]
+	root = /Users/yuzuki/workspace
+
+[alias]
+	delete = "!f () { git checkout $1; git branch --merged|egrep -v '\\*|develop|main'|xargs git branch -d; git fetch --prune; };f"
+
+
+
+
