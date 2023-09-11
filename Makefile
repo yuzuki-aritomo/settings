@@ -12,6 +12,15 @@ restore-zshrc:
 
 # git
 backup-gitconfig:
-  cp ~/.gitconfig .gitconfig
+	cp ~/.gitconfig .gitconfig
+
 restore-gitconfig:
 	cp .gitconfig ~/.gitconfig
+
+backup-karabiner:
+	cp ~/.config/karabiner/karabiner.json karabiner.json
+
+restore-karabiner:
+	cp karabiner.json ~/.config/karabiner/karabiner.json
+
+
